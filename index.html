@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webmasters small projects</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://ds.fusioncharts.com/2.0.43/css/ds.css">
+<script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+<script src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+<body>
+    <div class="container-fluid">
+        <div class="row shadow mt-3 mb-3 mr-2 ml-2">
+          <div class="col-3 pt-4">
+            <div id="action-group" class="list-group pt-2">
+              <button
+                type="button"
+                class="list-group-item list-group-item-action active"
+                name="gantt"
+                onclick="updateChart(this)"
+              >
+                Gantt Chart
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+                name="candlestick"
+                onclick="updateChart(this)"
+              >
+                Candlestick Chart
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+                name="bubble"
+                onclick="updateChart(this)"
+              >
+                Bubble Chart
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+                name="sunburst"
+                onclick="updateChart(this)"
+              >
+                Sunburst Chart
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+                name="treemap"
+                onclick="updateChart(this)"
+              >
+                Treemap Chart
+              </button>
+      
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+                name="multilevelpie"
+                onclick="updateChart(this)"
+              >
+                Multi-level Pie Chart
+              </button>
+            </div>
+          </div>
+          <div class="col-9">
+            <div id="chart-container"></div>
+            <div class="export-container text-center mt-1 mb-1">
+              <button id="export-btn" class="btn btn-sm btn-secondary-grad">
+                Export Chart Data as CSV
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+<script src="script.js"></script>    
+</body>
+</html>
